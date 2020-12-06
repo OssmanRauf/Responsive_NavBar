@@ -1,4 +1,66 @@
-body html {
+body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #202020;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    margin: 3px;
+    padding: 3px;
+    color: rgb(206, 185, 90);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    height: 100%;
+}
+
+li>a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 15px;
+}
+
+a {
+    height: 100%;
+    width: 100%;
+}
+
+li>a:hover {
+    background-color: #555;
+}
+
+.burger {
+    position: absolute;
+    right: 1rem;
+    top: .75rem;
+    width: 30px;
+    height: 21px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
 }
